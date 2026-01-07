@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Screenshot",
+    "version": "1.0.0",
+    "description": "Take a screenshot of any YouTube video with one click.",
+
+    "options_page": "options.html"
+    ,
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["page.js"],
+            "css": ["style.css"],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "storage"
+    ],
+    "icons": {
+  "16": "logo.png",
+  "32": "logo.png",
+  "48": "logo.png",
+  "128": "logo.png"
+}
+,
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

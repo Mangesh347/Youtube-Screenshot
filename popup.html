@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TubeShot</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    width: 260px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: #fff;
+}
+
+.container {
+    padding: 16px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+.logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 11px;
+    color: #aaa;
+}
+
+/* Card */
+.card {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(8px);
+    border-radius: 14px;
+    padding: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Toggle row */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.label {
+    font-size: 13px;
+}
+
+/* Toggle */
+.toggle {
+    position: relative;
+    width: 46px;
+    height: 24px;
+}
+
+.toggle input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background: #444;
+    border-radius: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 3px;
+    bottom: 3px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+input:checked + .slider {
+    background: linear-gradient(135deg, #00ff88, #00ccff);
+    box-shadow: 0 0 10px rgba(0,255,136,0.6);
+}
+
+input:checked + .slider::before {
+    transform: translateX(22px);
+}
+
+/* Divider */
+.divider {
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    margin: 12px 0;
+}
+
+/* Note */
+.note {
+    font-size: 11px;
+    color: #ffcc00;
+    background: rgba(255,204,0,0.1);
+    padding: 8px;
+    border-left: 3px solid #ffcc00;
+    border-radius: 6px;
+    line-height: 1.4;
+}
+.footer a {
+    color: #00ffcc;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.footer a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 10px;
+    color: #888;
+    margin-top: 12px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="header">
+       <img src="logo.png" class="logo" alt="TubeShot Logo">
+
+        <div>
+            <div class="title">YouTube Screenshot</div>
+            <div class="subtitle">YouTube Screenshot Tool</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <span class="label">Screenshot Button</span>
+            <label class="toggle">
+                <input type="checkbox" id="showBadgeCheckbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="note">
+            ⚠️ If the button doesn’t appear,<br>
+            reload the YouTube page once.
+        </div>
+    </div>
+<div class="footer">
+    <a href="#" id="privacyLink">v1.0 • Privacy-Friendly</a>
+</div>
+
+
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
