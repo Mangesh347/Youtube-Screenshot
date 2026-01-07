@@ -1,18 +1,38 @@
-# YouTube Screenshot Extension 📸
+<p align="center">
+  <img src="logo.png" alt="YouTube Screenshot Logo" width="150"/>
+</p>
 
-![Logo](logo.png)
+<h1 align="center">🎬 YouTube Screenshot Extension</h1>
 
-**YouTube Screenshot** is a lightweight Chrome/Edge extension that allows you to capture screenshots directly from YouTube videos with a single click.
+<p align="center">
+  <a href="https://github.com/Mangesh347/Youtube-Screenshot/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
+  </a>
+  <img src="https://img.shields.io/badge/Browser-Chrome-orange" alt="Chrome">
+  <img src="https://img.shields.io/badge/Browser-Edge-blue" alt="Edge">
+</p>
 
-## Features
+---
 
-- Capture screenshots from any YouTube video
-- Easy-to-use interface
-- Quick save and download
-- Works offline after installation
+## 🚀 Overview
 
-## Installation
+**YouTube Screenshot** is a **lightweight, fast, and easy-to-use Chrome/Edge extension** that lets you capture screenshots from any YouTube video instantly.  
+Perfect for content creators, students, and casual users!  
 
-1. Clone or download this repository.  
+---
+
+## ✨ Features
+
+- 📸 Capture **high-quality screenshots** from YouTube videos  
+- ⚡ **Fast and lightweight**, no lag  
+- 💾 **Automatic save** of screenshots  
+- 🖥️ Works **offline** after installation  
+- 🎨 Clean, simple, and intuitive interface  
+
+---
+
+## 🛠️ Installation
+
+1. **Clone the repository**:  
 ```bash
 git clone https://github.com/Mangesh347/Youtube-Screenshot.git
