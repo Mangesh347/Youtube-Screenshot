@@ -5,36 +5,55 @@
     <title>Privacy Policy - YouTube Screenshot</title>
 
     <style>
+        /* --- General Body --- */
         body {
-            font-family: Arial, sans-serif;
-            background: #f7f7f7;
-            color: #222;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1e1e1e; /* Dark charcoal background */
+            color: #e0e0e0; /* Light text */
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
 
         .container {
             max-width: 800px;
-            margin: 40px auto;
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            margin: 50px auto;
+            background: #2a2a2a; /* Slightly lighter card background */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Logo */
+        .logo {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 80px;
+            height: 80px;
+            border-radius: 15px;
+            object-fit: contain;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
         }
 
         h1 {
-            font-size: 26px;
+            font-size: 28px;
+            text-align: center;
             margin-bottom: 10px;
+            color: #ffcc00;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.7);
         }
 
         h2 {
-            font-size: 18px;
-            margin-top: 28px;
+            font-size: 20px;
+            color: #00ffcc;
+            margin-top: 30px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 4px;
         }
 
-        p {
-            line-height: 1.6;
-            font-size: 14px;
+        p, li {
+            font-size: 15px;
         }
 
         ul {
@@ -42,38 +61,51 @@
         }
 
         li {
-            margin-bottom: 6px;
-            font-size: 14px;
-        }
-
-        .meta {
-            font-size: 13px;
-            color: #666;
-            margin-bottom: 20px;
+            margin-bottom: 8px;
         }
 
         footer {
-            margin-top: 30px;
+            text-align: center;
+            margin-top: 40px;
             font-size: 13px;
-            color: #666;
+            color: #888;
+        }
+
+        a {
+            color: #00ccff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="container">
+
+        <!-- Logo -->
+        <img src="logo.png" alt="YouTube Screenshot Logo" class="logo">
+
         <h1>Privacy Policy</h1>
+        <p><strong>Effective Date:</strong> January 8, 2026<br>
+           <strong>Version:</strong> 1.0</p>
 
-        <div class="meta">
-            <strong>YouTube Screenshot Extension</strong><br>
-            Effective Date: January 8, 2026<br>
-            Version: 1.0
-        </div>
-
-        <p>
-            YouTube Screenshot is a Chrome extension that allows users to capture screenshots from YouTube videos with one click.
-            Your privacy is very important to us.
-        </p>
+        <p>YouTube Screenshot is a Chrome extension that allows users to capture screenshots from YouTube videos with one click. Your privacy is very important to us.</p>
 
         <h2>1. Data Collection</h2>
         <p>This extension does <strong>NOT</strong> collect, store, sell, or share any personal or sensitive user data.</p>
@@ -85,42 +117,28 @@
         </ul>
 
         <h2>2. Permissions Usage</h2>
-        <p>
-            The extension uses the <strong>storage</strong> permission only to save basic user preferences such as toggle states.
-            No personal or identifiable data is stored.
-        </p>
+        <p>The extension uses the <strong>storage</strong> permission only to save user preferences such as toggle states. No personal or identifiable data is stored.</p>
 
         <h2>3. Screenshot Handling</h2>
-        <p>
-            Screenshots are generated locally within your browser and saved directly to your device.
-            No screenshot content is transmitted externally.
-        </p>
+        <p>Screenshots are generated locally within your browser and saved directly to your device. No screenshot content is transmitted externally.</p>
 
         <h2>4. Third-Party Services</h2>
-        <p>
-            This extension does not use third-party APIs, analytics tools, advertisements, or tracking technologies.
-        </p>
+        <p>This extension does not use third-party APIs, analytics tools, advertisements, or tracking technologies.</p>
 
         <h2>5. Children’s Privacy</h2>
-        <p>
-            This extension does not target children and does not knowingly collect data from users of any age.
-        </p>
+        <p>This extension does not target children and does not knowingly collect data from users of any age.</p>
 
         <h2>6. Policy Updates</h2>
-        <p>
-            This privacy policy may be updated in the future.
-            Any changes will be reflected on this page with an updated effective date.
-        </p>
+        <p>This privacy policy may be updated in the future. Any changes will be reflected on this page with an updated version and effective date.</p>
 
         <h2>7. Contact</h2>
-        <p>
-            If you have questions about this privacy policy, you can contact the developer via the Chrome Web Store listing or:<br>
-            <strong>Email:</strong> lokademangesh123@gmail.com
-        </p>
+        <p>If you have questions about this privacy policy, you can contact the developer via the Chrome Web Store listing or:<br>
+        <strong>Email:</strong> lokademangesh123@gmail.com</p>
 
         <footer>
-            © 2026 YouTube Screenshot Extension. All rights reserved.
+            © 2026 YouTube Screenshot Extension — All rights reserved
         </footer>
+
     </div>
 </body>
 </html>
