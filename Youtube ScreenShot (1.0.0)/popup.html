@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>YouTube Screenshot</title>
+<style>
+body {
+  margin: 0;
+  padding: 14px;
+  width: 240px;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle input {
+  display: none;
+}
+.slider {
+  width: 42px;
+  height: 22px;
+  background: #555;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.slider::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+}
+input:checked + .slider {
+  background: #00cc88;
+}
+input:checked + .slider::before {
+  transform: translateX(20px);
+}
+.note {
+  font-size: 11px;
+  color: #aaa;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <span>Screenshot Button</span>
+  <label class="toggle">
+    <input type="checkbox" id="toggle">
+    <span class="slider"></span>
+  </label>
+</div>
+
+<div class="note">
+  Reload YouTube if button does not appear.
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
